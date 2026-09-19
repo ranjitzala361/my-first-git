@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZALA KING GAME</title>
+<style>
+body{background:#000;color:#fff;text-align:center;font-family:Arial;padding-top:50px}
+h1{color:gold;font-size:40px;text-shadow:0 0 10px gold}
+#btn{background:gold;color:#000;font-size:30px;padding:20px 50px;border:none;border-radius:50px;margin-top:30px}
+#score{font-size:50px;color:#0f0}
+</style>
+</head>
+<body>
+<h1>👑 ZALA KING 👑</h1>
+<h2>TAP GAME</h2>
+<div id="score">0</div>
+<button id="btn" onclick="tap()">TAP KARO!</button>
+<p>Made by ZALA KING - 2026</p>
+<script>
+let s=0;
+function tap(){s++;document.getElementById('score').innerText=s;if(navigator.vibrate)navigator.vibrate(50)}
+</script>
+</body>
+</html>
